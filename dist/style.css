@@ -5,3 +5,5 @@
 .steps.sixteenths{grid-template-columns:repeat(8,minmax(0,1fr))}.step.beat-start{border-left:3px solid #a4bf72}.bar .pattern{display:block;overflow-wrap:anywhere;letter-spacing:3px;line-height:1.6}.settings{flex-wrap:wrap}.settings .muted{white-space:nowrap}.steps.sixteenths .step{min-height:85px}@media(min-width:1450px){.steps.sixteenths{grid-template-columns:repeat(16,minmax(0,1fr));gap:5px}}
 
 .harmony-controls{display:flex;gap:12px;align-items:center;flex-wrap:wrap;font-size:14px}.harmony{display:grid;overflow-x:auto;gap:4px;margin-bottom:20px;padding:3px}.harmony-step{padding:10px 2px;font-size:13px;overflow-wrap:anywhere}.harmony-step.chosen{border-color:#e6b77b;color:#e6b77b}.bar strong{font-size:25px;overflow-wrap:anywhere}
+
+.transport{flex-wrap:wrap;justify-content:flex-end}.transport #tone{font-size:14px;max-width:200px;margin-left:6px}.titlebar{flex-wrap:wrap}@media(max-width:1050px){.transport{justify-content:flex-start}}
