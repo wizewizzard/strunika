@@ -9,3 +9,5 @@
 .transport{flex-wrap:wrap;justify-content:flex-end}.transport #tone{font-size:14px;max-width:200px;margin-left:6px}.titlebar{flex-wrap:wrap}@media(max-width:1050px){.transport{justify-content:flex-start}}
 
 .fret.suggested span{color:#97a78b;border:1px dashed #7e8d70;background:#171d19}.fret.note span{border:0;background:#e9b677;color:#302312}
+
+.editor-actions{display:flex;gap:8px;flex-wrap:wrap}.editor>.sectionhead{gap:12px;flex-wrap:wrap}
