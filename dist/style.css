@@ -7,3 +7,5 @@
 .harmony-controls{display:flex;gap:12px;align-items:center;flex-wrap:wrap;font-size:14px}.harmony{display:grid;overflow-x:auto;gap:4px;margin-bottom:20px;padding:3px}.harmony-step{padding:10px 2px;font-size:13px;overflow-wrap:anywhere}.harmony-step.chosen{border-color:#e6b77b;color:#e6b77b}.bar strong{font-size:25px;overflow-wrap:anywhere}
 
 .transport{flex-wrap:wrap;justify-content:flex-end}.transport #tone{font-size:14px;max-width:200px;margin-left:6px}.titlebar{flex-wrap:wrap}@media(max-width:1050px){.transport{justify-content:flex-start}}
+
+.fret.suggested span{color:#97a78b;border:1px dashed #7e8d70;background:#171d19}.fret.note span{border:0;background:#e9b677;color:#302312}
