@@ -13,3 +13,5 @@
 .editor-actions{display:flex;gap:8px;flex-wrap:wrap}.editor>.sectionhead{gap:12px;flex-wrap:wrap}
 
 .bars{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,210px),1fr));overflow:visible;align-items:stretch}.bar-card{min-width:0;display:flex;flex-direction:column}.bar-card .bar{width:100%;min-width:0;flex:1}.bar-select{display:flex;align-items:center;gap:8px;padding:12px 4px;color:#b4bdb5;font-size:14px;cursor:pointer}.bar-select input{width:18px;height:18px;accent-color:#dcff82}.selection-controls{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:16px}.selection-controls span{font-size:14px;color:#b4bdb5;margin-right:auto}.selection-controls button{font-size:14px;padding:8px 12px}
+
+.percussion-controls:not([hidden]){display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:16px;padding:14px;background:#202629;border-radius:9px}.percussion-controls span{font-size:14px;margin-right:6px}.percussion-controls small{font-size:13px;color:#a6b0aa}.percussion-controls button.selected{background:#3c3428;border-color:#e9b677;color:#ffd5a0}
