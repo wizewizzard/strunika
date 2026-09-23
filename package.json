@@ -1,0 +1,29 @@
+{
+  "name": "strunika",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/dev.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "db:generate": "drizzle-kit generate"
+  },
+  "dependencies": {
+    "@noble/hashes": "2.4.0",
+    "drizzle-orm": "0.45.2"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.12",
+    "drizzle-kit": "0.31.10",
+    "miniflare": "4.20260730.0"
+  },
+  "overrides": {
+    "@esbuild-kit/core-utils": {
+      "esbuild": "$esbuild"
+    }
+  }
+}

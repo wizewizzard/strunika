@@ -1,0 +1,12 @@
+import { build } from 'esbuild';
+import { readFile, mkdir, cp, rm } from 'node:fs/promises';
+await rm('dist',{recursive:true,force:true});
+await mkdir('dist/server',{recursive:true});
+const assets={};
+for(const file of ['index.html','style.css','app.js','library.js'])assets['/'+file]=await readFile('public/'+file,'utf8');
+assets['/validation.js']=await readFile('server/validation.js','utf8');
+await build({entryPoints:['server/worker.js'],outfile:'dist/server/index.js',bundle:true,format:'esm',platform:'browser',target:'es2022',plugins:[{name:'assets',setup(b){b.onResolve({filter:/^virtual:assets$/},()=>({path:'assets',namespace:'assets'}));b.onLoad({filter:/.*/,namespace:'assets'},()=>({contents:'export default '+JSON.stringify(assets),loader:'js'}));}}]});
+await mkdir('dist/.openai',{recursive:true});
+await cp('.openai/hosting.json','dist/.openai/hosting.json');
+await cp('drizzle','dist/.openai/drizzle',{recursive:true});
+console.log('Built Strunika Worker and database migrations');
